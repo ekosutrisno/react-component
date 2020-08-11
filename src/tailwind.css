@@ -8,6 +8,14 @@
   @apply text-gray-200 ;
   @apply font-medium ;
 }
+.btn-default{
+   @apply py-1; 
+   @apply px-6; 
+  @apply rounded-lg ;
+  @apply bg-white ;
+  @apply text-blue-900 ;
+  @apply font-medium ;
+}
 
 
 
