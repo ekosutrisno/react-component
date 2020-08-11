@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import CardMansony from './components/CardMansony';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-200 min-h-screen">
+      <Header />
+      <div className="container mx-auto px-48 mt-4">
+        <CardMansony title="CardMansony 01" src="http://lorempixel.com/640/480/business" />
+        <div className="flex justify-between items-center pt-4 space-x-3">
+          <CardMansony
+            title="CardMansony 02"
+            src="http://lorempixel.com/640/480/people"
+            imgHeight="64" />
+          <CardMansony
+            title="CardMansony 03"
+            src="http://lorempixel.com/640/480/nightlife" />
+        </div>
+      </div>
     </div>
   );
 }
