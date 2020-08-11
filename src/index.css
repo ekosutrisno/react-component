@@ -577,6 +577,21 @@ video {
   height: auto;
 }
 
+.btn-primary{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 0.5rem;
+  --bg-opacity: 1;
+  background-color: #2a4365;
+  background-color: rgba(42, 67, 101, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #edf2f7;
+  color: rgba(237, 242, 247, var(--text-opacity));
+  font-weight: 500;
+}
+
 .container {
   width: 100%;
 }
@@ -1687,8 +1702,8 @@ video {
 
 .divide-eko > :not(template) ~ :not(template) {
   --divide-opacity: 1;
-  border-color: pink;
-  border-color: rgba(255, 192, 203, var(--divide-opacity));
+  border-color: blue;
+  border-color: rgba(0, 0, 255, var(--divide-opacity));
 }
 
 .divide-opacity-0 > :not(template) ~ :not(template) {
@@ -2337,8 +2352,8 @@ video {
 
 .bg-eko {
   --bg-opacity: 1;
-  background-color: pink;
-  background-color: rgba(255, 192, 203, var(--bg-opacity));
+  background-color: blue;
+  background-color: rgba(0, 0, 255, var(--bg-opacity));
 }
 
 .hover\:bg-transparent:hover {
@@ -2903,8 +2918,8 @@ video {
 
 .hover\:bg-eko:hover {
   --bg-opacity: 1;
-  background-color: pink;
-  background-color: rgba(255, 192, 203, var(--bg-opacity));
+  background-color: blue;
+  background-color: rgba(0, 0, 255, var(--bg-opacity));
 }
 
 .focus\:bg-transparent:focus {
@@ -3469,8 +3484,8 @@ video {
 
 .focus\:bg-eko:focus {
   --bg-opacity: 1;
-  background-color: pink;
-  background-color: rgba(255, 192, 203, var(--bg-opacity));
+  background-color: blue;
+  background-color: rgba(0, 0, 255, var(--bg-opacity));
 }
 
 .bg-opacity-0 {
@@ -4175,8 +4190,8 @@ video {
 
 .border-eko {
   --border-opacity: 1;
-  border-color: pink;
-  border-color: rgba(255, 192, 203, var(--border-opacity));
+  border-color: blue;
+  border-color: rgba(0, 0, 255, var(--border-opacity));
 }
 
 .hover\:border-transparent:hover {
@@ -4741,8 +4756,8 @@ video {
 
 .hover\:border-eko:hover {
   --border-opacity: 1;
-  border-color: pink;
-  border-color: rgba(255, 192, 203, var(--border-opacity));
+  border-color: blue;
+  border-color: rgba(0, 0, 255, var(--border-opacity));
 }
 
 .focus\:border-transparent:focus {
@@ -5307,8 +5322,8 @@ video {
 
 .focus\:border-eko:focus {
   --border-opacity: 1;
-  border-color: pink;
-  border-color: rgba(255, 192, 203, var(--border-opacity));
+  border-color: blue;
+  border-color: rgba(0, 0, 255, var(--border-opacity));
 }
 
 .border-opacity-0 {
@@ -8981,8 +8996,8 @@ video {
 
 .placeholder-eko::placeholder {
   --placeholder-opacity: 1;
-  color: pink;
-  color: rgba(255, 192, 203, var(--placeholder-opacity));
+  color: blue;
+  color: rgba(0, 0, 255, var(--placeholder-opacity));
 }
 
 .focus\:placeholder-transparent:focus::placeholder {
@@ -9547,8 +9562,8 @@ video {
 
 .focus\:placeholder-eko:focus::placeholder {
   --placeholder-opacity: 1;
-  color: pink;
-  color: rgba(255, 192, 203, var(--placeholder-opacity));
+  color: blue;
+  color: rgba(0, 0, 255, var(--placeholder-opacity));
 }
 
 .placeholder-opacity-0::placeholder {
@@ -10427,8 +10442,8 @@ video {
 
 .text-eko {
   --text-opacity: 1;
-  color: pink;
-  color: rgba(255, 192, 203, var(--text-opacity));
+  color: blue;
+  color: rgba(0, 0, 255, var(--text-opacity));
 }
 
 .hover\:text-transparent:hover {
@@ -10993,8 +11008,8 @@ video {
 
 .hover\:text-eko:hover {
   --text-opacity: 1;
-  color: pink;
-  color: rgba(255, 192, 203, var(--text-opacity));
+  color: blue;
+  color: rgba(0, 0, 255, var(--text-opacity));
 }
 
 .focus\:text-transparent:focus {
@@ -11559,8 +11574,8 @@ video {
 
 .focus\:text-eko:focus {
   --text-opacity: 1;
-  color: pink;
-  color: rgba(255, 192, 203, var(--text-opacity));
+  color: blue;
+  color: rgba(0, 0, 255, var(--text-opacity));
 }
 
 .text-opacity-0 {
@@ -15625,8 +15640,8 @@ video {
 
   .sm\:divide-eko > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--divide-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--divide-opacity));
   }
 
   .sm\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -16275,8 +16290,8 @@ video {
 
   .sm\:bg-eko {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .sm\:hover\:bg-transparent:hover {
@@ -16841,8 +16856,8 @@ video {
 
   .sm\:hover\:bg-eko:hover {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .sm\:focus\:bg-transparent:focus {
@@ -17407,8 +17422,8 @@ video {
 
   .sm\:focus\:bg-eko:focus {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .sm\:bg-opacity-0 {
@@ -18113,8 +18128,8 @@ video {
 
   .sm\:border-eko {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .sm\:hover\:border-transparent:hover {
@@ -18679,8 +18694,8 @@ video {
 
   .sm\:hover\:border-eko:hover {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .sm\:focus\:border-transparent:focus {
@@ -19245,8 +19260,8 @@ video {
 
   .sm\:focus\:border-eko:focus {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .sm\:border-opacity-0 {
@@ -22919,8 +22934,8 @@ video {
 
   .sm\:placeholder-eko::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .sm\:focus\:placeholder-transparent:focus::placeholder {
@@ -23485,8 +23500,8 @@ video {
 
   .sm\:focus\:placeholder-eko:focus::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .sm\:placeholder-opacity-0::placeholder {
@@ -24365,8 +24380,8 @@ video {
 
   .sm\:text-eko {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .sm\:hover\:text-transparent:hover {
@@ -24931,8 +24946,8 @@ video {
 
   .sm\:hover\:text-eko:hover {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .sm\:focus\:text-transparent:focus {
@@ -25497,8 +25512,8 @@ video {
 
   .sm\:focus\:text-eko:focus {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .sm\:text-opacity-0 {
@@ -29520,8 +29535,8 @@ video {
 
   .md\:divide-eko > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--divide-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--divide-opacity));
   }
 
   .md\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -30170,8 +30185,8 @@ video {
 
   .md\:bg-eko {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
@@ -30736,8 +30751,8 @@ video {
 
   .md\:hover\:bg-eko:hover {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .md\:focus\:bg-transparent:focus {
@@ -31302,8 +31317,8 @@ video {
 
   .md\:focus\:bg-eko:focus {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .md\:bg-opacity-0 {
@@ -32008,8 +32023,8 @@ video {
 
   .md\:border-eko {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .md\:hover\:border-transparent:hover {
@@ -32574,8 +32589,8 @@ video {
 
   .md\:hover\:border-eko:hover {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .md\:focus\:border-transparent:focus {
@@ -33140,8 +33155,8 @@ video {
 
   .md\:focus\:border-eko:focus {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .md\:border-opacity-0 {
@@ -36814,8 +36829,8 @@ video {
 
   .md\:placeholder-eko::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .md\:focus\:placeholder-transparent:focus::placeholder {
@@ -37380,8 +37395,8 @@ video {
 
   .md\:focus\:placeholder-eko:focus::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .md\:placeholder-opacity-0::placeholder {
@@ -38260,8 +38275,8 @@ video {
 
   .md\:text-eko {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .md\:hover\:text-transparent:hover {
@@ -38826,8 +38841,8 @@ video {
 
   .md\:hover\:text-eko:hover {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .md\:focus\:text-transparent:focus {
@@ -39392,8 +39407,8 @@ video {
 
   .md\:focus\:text-eko:focus {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .md\:text-opacity-0 {
@@ -43415,8 +43430,8 @@ video {
 
   .lg\:divide-eko > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--divide-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--divide-opacity));
   }
 
   .lg\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -44065,8 +44080,8 @@ video {
 
   .lg\:bg-eko {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .lg\:hover\:bg-transparent:hover {
@@ -44631,8 +44646,8 @@ video {
 
   .lg\:hover\:bg-eko:hover {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .lg\:focus\:bg-transparent:focus {
@@ -45197,8 +45212,8 @@ video {
 
   .lg\:focus\:bg-eko:focus {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .lg\:bg-opacity-0 {
@@ -45903,8 +45918,8 @@ video {
 
   .lg\:border-eko {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .lg\:hover\:border-transparent:hover {
@@ -46469,8 +46484,8 @@ video {
 
   .lg\:hover\:border-eko:hover {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .lg\:focus\:border-transparent:focus {
@@ -47035,8 +47050,8 @@ video {
 
   .lg\:focus\:border-eko:focus {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .lg\:border-opacity-0 {
@@ -50709,8 +50724,8 @@ video {
 
   .lg\:placeholder-eko::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .lg\:focus\:placeholder-transparent:focus::placeholder {
@@ -51275,8 +51290,8 @@ video {
 
   .lg\:focus\:placeholder-eko:focus::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .lg\:placeholder-opacity-0::placeholder {
@@ -52155,8 +52170,8 @@ video {
 
   .lg\:text-eko {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .lg\:hover\:text-transparent:hover {
@@ -52721,8 +52736,8 @@ video {
 
   .lg\:hover\:text-eko:hover {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .lg\:focus\:text-transparent:focus {
@@ -53287,8 +53302,8 @@ video {
 
   .lg\:focus\:text-eko:focus {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .lg\:text-opacity-0 {
@@ -57310,8 +57325,8 @@ video {
 
   .xl\:divide-eko > :not(template) ~ :not(template) {
     --divide-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--divide-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--divide-opacity));
   }
 
   .xl\:divide-opacity-0 > :not(template) ~ :not(template) {
@@ -57960,8 +57975,8 @@ video {
 
   .xl\:bg-eko {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .xl\:hover\:bg-transparent:hover {
@@ -58526,8 +58541,8 @@ video {
 
   .xl\:hover\:bg-eko:hover {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .xl\:focus\:bg-transparent:focus {
@@ -59092,8 +59107,8 @@ video {
 
   .xl\:focus\:bg-eko:focus {
     --bg-opacity: 1;
-    background-color: pink;
-    background-color: rgba(255, 192, 203, var(--bg-opacity));
+    background-color: blue;
+    background-color: rgba(0, 0, 255, var(--bg-opacity));
   }
 
   .xl\:bg-opacity-0 {
@@ -59798,8 +59813,8 @@ video {
 
   .xl\:border-eko {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .xl\:hover\:border-transparent:hover {
@@ -60364,8 +60379,8 @@ video {
 
   .xl\:hover\:border-eko:hover {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .xl\:focus\:border-transparent:focus {
@@ -60930,8 +60945,8 @@ video {
 
   .xl\:focus\:border-eko:focus {
     --border-opacity: 1;
-    border-color: pink;
-    border-color: rgba(255, 192, 203, var(--border-opacity));
+    border-color: blue;
+    border-color: rgba(0, 0, 255, var(--border-opacity));
   }
 
   .xl\:border-opacity-0 {
@@ -64604,8 +64619,8 @@ video {
 
   .xl\:placeholder-eko::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .xl\:focus\:placeholder-transparent:focus::placeholder {
@@ -65170,8 +65185,8 @@ video {
 
   .xl\:focus\:placeholder-eko:focus::placeholder {
     --placeholder-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--placeholder-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--placeholder-opacity));
   }
 
   .xl\:placeholder-opacity-0::placeholder {
@@ -66050,8 +66065,8 @@ video {
 
   .xl\:text-eko {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .xl\:hover\:text-transparent:hover {
@@ -66616,8 +66631,8 @@ video {
 
   .xl\:hover\:text-eko:hover {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .xl\:focus\:text-transparent:focus {
@@ -67182,8 +67197,8 @@ video {
 
   .xl\:focus\:text-eko:focus {
     --text-opacity: 1;
-    color: pink;
-    color: rgba(255, 192, 203, var(--text-opacity));
+    color: blue;
+    color: rgba(0, 0, 255, var(--text-opacity));
   }
 
   .xl\:text-opacity-0 {

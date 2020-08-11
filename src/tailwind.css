@@ -1,5 +1,17 @@
 @tailwind base;
 
+.btn-primary{
+   @apply py-1; 
+   @apply px-6; 
+  @apply rounded-lg ;
+  @apply bg-blue-900 ;
+  @apply text-gray-200 ;
+  @apply font-medium ;
+}
+
+
+
+
 @tailwind components;
 
 @tailwind utilities;
