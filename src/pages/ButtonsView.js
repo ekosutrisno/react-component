@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import ButtonPrimary from '../components/buttons/ButtonPrimary';
-import ButtonPrimaryShadow from '../components/buttons/ButtonPrimaryShadow';
-import ButtonDefault from '../components/buttons/ButtonDefault';
-import ButtonDefaultShadow from '../components/buttons/ButtonDefaultShadow';
+import {
+   ButtonDefault,
+   ButtonDefaultShadow,
+   ButtonPrimary,
+   ButtonPrimaryShadow,
+   ButtonLink,
+   ButtonText
+} from '../components/shared/Button';
 
 export class ButtonsView extends Component {
    render() {
@@ -26,6 +30,12 @@ export class ButtonsView extends Component {
                      </div>
                      <div className="py-3">
                         <ButtonDefaultShadow btnText="Default Button 2" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonText btnText="Text Button" href="/" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonLink btnText="Link Button" href="/" />
                      </div>
                   </div>
                </div>
@@ -76,7 +86,7 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 03 */}
-            <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col hidden justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Type
                </div>
@@ -109,7 +119,7 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 04 */}
-            <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col hidden justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Type
                </div>
