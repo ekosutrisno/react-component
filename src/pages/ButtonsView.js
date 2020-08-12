@@ -8,6 +8,10 @@ import {
    ButtonText
 } from '../components/shared/Button';
 
+import ButtonIcon from '../components/buttons/ButtonIcon';
+import ButtonIconShadow from '../components/buttons/ButtonIconShadow';
+import ButtonIconCircle from '../components/buttons/ButtonIconCircle';
+
 export class ButtonsView extends Component {
    render() {
       return (
@@ -55,21 +59,36 @@ export class ButtonsView extends Component {
             {/* Card 02 */}
             <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
-                  Type
+                  Icon
                </div>
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3">
-                        <ButtonPrimary btnText="Primary Button 1" />
+                        <ButtonIcon primary btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonPrimaryShadow btnText="Primary Button 2" />
+                        <ButtonIcon btnText="Search" default icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonDefault btnText="Default Button 1" />
+                        <ButtonIcon border default btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonDefaultShadow btnText="Default Button 2" />
+                        <ButtonIcon btnText="Search" icon="fa fa-fw fa-search" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonIconCircle icon="fa fa-fw fa-save" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonIconCircle primary icon="fa fa-fw fa-search" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonIconCircle primary btnText="M" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonIconCircle shadow icon="fa fa-fw fa-search" />
+                     </div>
+                     <div className="py-3">
+                        <ButtonIconCircle border icon="fa fa-fw fa-search" />
                      </div>
                   </div>
                </div>
