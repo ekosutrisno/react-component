@@ -9,13 +9,12 @@ import {
 } from '../components/shared/Button';
 
 import ButtonIcon from '../components/buttons/ButtonIcon';
-import ButtonIconShadow from '../components/buttons/ButtonIconShadow';
 import ButtonIconCircle from '../components/buttons/ButtonIconCircle';
 
 export class ButtonsView extends Component {
    render() {
       return (
-         <div class="mx-auto box-border items-center justify-between flex flex-wrap container py-5">
+         <div className="mx-auto box-border items-center justify-between flex flex-wrap container py-5">
             {/* Card 01 */}
             <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
