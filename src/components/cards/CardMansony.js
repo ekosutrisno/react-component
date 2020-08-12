@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 export class CardMansony extends Component {
 
-   render(props) {
+   render() {
       return (
          <div className="flex-col justify-start h-full bg-white rounded-lg shadow-md">
             <div className="header h-16 p-6 font-semibold">
@@ -25,7 +25,6 @@ export class CardMansony extends Component {
                <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
                <button className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
             </div>
-
          </div>
       );
    }
