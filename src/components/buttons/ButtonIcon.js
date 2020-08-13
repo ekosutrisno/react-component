@@ -9,7 +9,7 @@ export class ButtonIcon extends Component {
       } else if (props.default) {
          className += ' btn-default shadow-md';
       } else {
-         className = ' py-2 px-6 text-blue-900 hover:text-blue-700';
+         className = ' py-2 px-6 text-blue-900 hover:text-blue-700 focus:outline-none';
       }
 
       if (props.border) {

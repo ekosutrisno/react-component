@@ -19,12 +19,8 @@ export class Header extends Component {
                   <Link to="/button" className="py-2 px-3 font-semibold text-gray-800 focus:outline-none hover:text-green-600">Btn</Link>
                </div>
                <Switch>
-                  <Route path="/cardview">
-                     <CardsView />
-                  </Route>
-                  <Route path="/button">
-                     <ButtonsView />
-                  </Route>
+                  <Route path="/cardview" component={CardsView} />
+                  <Route path="/button" component={ButtonsView} />
                </Switch>
             </div>
          </Router>

@@ -10,13 +10,14 @@ import {
 
 import ButtonIcon from '../components/buttons/ButtonIcon';
 import ButtonIconCircle from '../components/buttons/ButtonIconCircle';
+import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/buttons/ButtonBlock';
 
 export class ButtonsView extends Component {
    render() {
       return (
-         <div className="mx-auto box-border items-center justify-between flex flex-wrap container py-5">
+         <div className="mx-auto box-border items-center justify-between flex flex-wrap container py-5 space-y-2">
             {/* Card 01 */}
-            <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Type
                </div>
@@ -56,7 +57,7 @@ export class ButtonsView extends Component {
             </div>
 
             {/* Card 02 */}
-            <div className="flex-col justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Icon
                </div>
@@ -104,23 +105,19 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 03 */}
-            <div className="flex-col hidden justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
-                  Type
+                  Ghost Button
                </div>
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
-                     <div className="py-3">
-                        <ButtonPrimary btnText="Primary Button 1" />
-                     </div>
-                     <div className="py-3">
-                        <ButtonPrimaryShadow btnText="Primary Button 2" />
-                     </div>
-                     <div className="py-3">
-                        <ButtonDefault btnText="Default Button 1" />
-                     </div>
-                     <div className="py-3">
-                        <ButtonDefaultShadow btnText="Default Button 2" />
+                     <div className="flex items-center justify-center p-5 rounded-lg bg-gray-900 w-full">
+                        <div className="py-3">
+                           <ButtonDefault btnText="Default" />
+                        </div>
+                        <div className="py-3">
+                           <ButtonText textWhite btnText="Text Button" href="/" />
+                        </div>
                      </div>
                   </div>
                </div>
@@ -137,23 +134,23 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 04 */}
-            <div className="flex-col hidden justify-start h-full w-1/3 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
-                  Type
+                  Block Button
                </div>
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
-                     <div className="py-3">
-                        <ButtonPrimary btnText="Primary Button 1" />
+                     <div className="py-3 w-full">
+                        <ButtonBlock primary btnText="Primary Button 2" />
                      </div>
-                     <div className="py-3">
-                        <ButtonPrimaryShadow btnText="Primary Button 2" />
+                     <div className="py-3 w-full">
+                        <ButtonBlock shadow btnText="Primary Button 2" />
                      </div>
-                     <div className="py-3">
-                        <ButtonDefault btnText="Default Button 1" />
+                     <div className="py-3 w-full">
+                        <ButtonBlockText href="" btnText="Primary Button 2" />
                      </div>
-                     <div className="py-3">
-                        <ButtonDefaultShadow btnText="Default Button 2" />
+                     <div className="py-3 w-full">
+                        <ButtonBlockLink href="" btnText="Primary Button 2" />
                      </div>
                   </div>
                </div>
