@@ -5,8 +5,8 @@ import {
    Route,
    Link
 } from "react-router-dom";
-import CardsView from '../pages/CardsView';
-import ButtonsView from '../pages/ButtonsView';
+import CardsView from '../../pages/CardsView';
+import ButtonsView from '../../pages/ButtonsView';
 
 export class Header extends Component {
    render() {
