@@ -6,12 +6,19 @@ export class ButtonDefault extends Component {
       console.log('this is:', this);
    }
    render() {
-      let property = this.props;
+      let props = this.props;
+      let className = "btn-default focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
+      if (props.border) {
+         className += ' border border-blue-900';
+      }
+      if (props.shadow) {
+         className += ' shadow-md';
+      }
       return (
          <button
             onClick={() => this.handleClick()}
-            className="btn-default focus:outline-none border border-blue-900 hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900">
-            {property.btnText}
+            className={className}>
+            {props.btnText}
          </button>
       );
    }
@@ -22,10 +29,11 @@ export class ButtonDefaultShadow extends Component {
    }
    render() {
       let property = this.props;
+      let className = "btn-default shadow-md focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
       return (
          <button
             onClick={() => this.handleClick()}
-            className="btn-default shadow-md focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900">
+            className={className}>
             {property.btnText}
          </button>
       );
@@ -37,12 +45,15 @@ export class ButtonPrimary extends Component {
       console.log('this is:', this);
    }
    render() {
-      let property = this.props;
+      let props = this.props;
+      let className = "btn-primary focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
+      if (props.shadow)
+         className += ' shadow-md';
       return (
          <button
             onClick={() => this.handleClick()}
-            className="btn-primary focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900">
-            {property.btnText}
+            className={className}>
+            {props.btnText}
          </button>
       );
    }

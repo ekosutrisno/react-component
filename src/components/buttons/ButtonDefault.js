@@ -6,10 +6,11 @@ export class ButtonDefault extends Component {
    }
    render() {
       let property = this.props;
+      let className = "btn-default focus:outline-none border border-blue-900";
       return (
          <button
             onClick={() => this.handleClick()}
-            className="btn-default focus:outline-none border border-blue-900">
+            className={className}>
             {property.btnText}
          </button>
       );

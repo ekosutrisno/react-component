@@ -27,13 +27,13 @@ export class ButtonsView extends Component {
                         <ButtonPrimary btnText="Primary Button 1" />
                      </div>
                      <div className="py-3">
-                        <ButtonPrimaryShadow btnText="Primary Button 2" />
+                        <ButtonPrimary shadow btnText="Primary Button 2" />
                      </div>
                      <div className="py-3">
-                        <ButtonDefault btnText="Default Button 1" />
+                        <ButtonDefault border btnText="Default Button 1" />
                      </div>
                      <div className="py-3">
-                        <ButtonDefaultShadow btnText="Default Button 2" />
+                        <ButtonDefault shadow btnText="Default Button 2" />
                      </div>
                      <div className="py-3">
                         <ButtonText btnText="Text Button" href="/" />
