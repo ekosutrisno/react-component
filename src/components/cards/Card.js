@@ -4,22 +4,15 @@ import SyntaxHighlighter from 'react-syntax-highlighter';
 import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
-export class CardMansony extends Component {
+export class Card extends Component {
 
    constructor(props) {
       super(props);
       this.state = { showCode: false };
-      this.handleToggleClick = this.handleToggleClick.bind(this);
-   }
-
-   handleToggleClick() {
-      this.setState(state => ({
-         showCode: !state.showCode
-      }));
    }
 
    render() {
-      const { title, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
+      const { title, description, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
 
       let className = "flex-col justify-start h-full bg-white rounded-lg shadow-md";
       if (small)
@@ -36,12 +29,10 @@ export class CardMansony extends Component {
                </div>
             </div>
             <div className="descriptions h-auto p-6 border-t border-gray-300">
-               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
-               dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
-               velit unde quo nobis libero a.</p>
+               <p>{description}</p>
             </div>
             <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-8">
-               <a href={githubBtnUri} target="blank" className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></a>
+               <a href={githubBtnUri} target={'blank'} className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700">{}</a>
                <button onClick={squareBtnAct} className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                <button onClick={copyBtnAct} className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
                <button onClick={() => this.setState(state => ({ showCode: !state.showCode }))} className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
@@ -54,6 +45,7 @@ export class CardMansony extends Component {
                         style={docco}
                         wrapLines={true}
                      >
+                        {/* All code block wil appear in here */}
                         {codeBlock}
                      </SyntaxHighlighter>
                   </div>
@@ -64,7 +56,7 @@ export class CardMansony extends Component {
    }
 }
 
-CardMansony.propTypes = {
+Card.propTypes = {
    title: PropTypes.string,
    imgHeight: PropTypes.string,
    src: PropTypes.string,
@@ -75,4 +67,4 @@ CardMansony.propTypes = {
    codeBlock: PropTypes.any
 };
 
-export default CardMansony;
+export default Card;

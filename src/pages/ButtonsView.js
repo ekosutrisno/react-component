@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {
    ButtonDefault,
-   // ButtonDefaultShadow,
    ButtonPrimary,
-   // ButtonPrimaryShadow,
    ButtonLink,
    ButtonText
 } from '../components/shared/Button';
@@ -13,6 +11,16 @@ import ButtonIconCircle from '../components/buttons/ButtonIconCircle';
 import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/buttons/ButtonBlock';
 
 export class ButtonsView extends Component {
+   onClickTestEvent() {
+      console.log("Testing Event Click Button");
+   }
+   onHoverTestEvent() {
+      console.log("Testing Event Hover Button");
+   }
+   onFocusTestEvent() {
+      console.log("Testing Event Focus Button");
+   }
+
    render() {
       return (
          <div className="mx-auto box-border items-center justify-between flex flex-wrap container py-5 space-y-2">
@@ -24,16 +32,38 @@ export class ButtonsView extends Component {
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3">
-                        <ButtonPrimary btnText="Primary Button 1" />
+                        <ButtonPrimary
+                           onClick={this.onClickTestEvent}
+                           onHover={this.onHoverTestEvent}
+                           onFocus={this.onFocusTestEvent}
+                           btnText="Primary Button 1" />
                      </div>
                      <div className="py-3">
-                        <ButtonPrimary shadow btnText="Primary Button 2" />
+                        <ButtonPrimary
+                           shadow
+                           btnText="Primary Button 2"
+                           onClick={this.onClickTestEvent}
+                           onHover={this.onHoverTestEvent}
+                           onFocus={this.onFocusTestEvent}
+                        />
                      </div>
                      <div className="py-3">
-                        <ButtonDefault border btnText="Default Button 1" />
+                        <ButtonDefault
+                           border
+                           btnText="Default Button 1"
+                           onClick={this.onClickTestEvent}
+                           onHover={this.onHoverTestEvent}
+                           onFocus={this.onFocusTestEvent}
+                        />
                      </div>
                      <div className="py-3">
-                        <ButtonDefault shadow btnText="Default Button 2" />
+                        <ButtonDefault
+                           shadow
+                           btnText="Default Button 2"
+                           onClick={this.onClickTestEvent}
+                           onHover={this.onHoverTestEvent}
+                           onFocus={this.onFocusTestEvent}
+                        />
                      </div>
                      <div className="py-3">
                         <ButtonText btnText="Text Button" href="/" />
@@ -55,7 +85,6 @@ export class ButtonsView extends Component {
                   <button className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
                </div>
             </div>
-
             {/* Card 02 */}
             <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
@@ -76,7 +105,7 @@ export class ButtonsView extends Component {
                         <ButtonIcon btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle icon="fa fa-fw fa-save" />
+                        <ButtonIconCircle icon="fa fa-fw fa-save text-blue-900" />
                      </div>
                      <div className="py-3">
                         <ButtonIconCircle primary icon="fa fa-fw fa-search" />
