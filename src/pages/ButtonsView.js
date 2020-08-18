@@ -1,14 +1,7 @@
 import React, { Component } from 'react';
-import {
-   ButtonDefault,
-   ButtonPrimary,
-   ButtonLink,
-   ButtonText
-} from '../components/shared/Button';
-
-import ButtonIcon from '../components/buttons/ButtonIcon';
-import ButtonIconCircle from '../components/buttons/ButtonIconCircle';
-import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/buttons/ButtonBlock';
+import { ButtonDefault, ButtonPrimary, ButtonLink, ButtonText } from '../components/shared/Button';
+import { ButtonIcon, ButtonIconCircle } from '../components/shared/ButtonIcon';
+import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/shared/ButtonBlock';
 
 export class ButtonsView extends Component {
    onClickTestEvent() {
@@ -66,7 +59,7 @@ export class ButtonsView extends Component {
                         />
                      </div>
                      <div className="py-3">
-                        <ButtonText btnText="Text Button" href="/" />
+                        <ButtonText btnText="Text Button" href="/cardview" />
                      </div>
                      <div className="py-3">
                         <ButtonLink btnText="Link Button" href="/" />
@@ -93,31 +86,31 @@ export class ButtonsView extends Component {
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3">
-                        <ButtonIcon primary btnText="Search" icon="fa fa-fw fa-search" />
+                        <ButtonIcon onClick={this.onClickTestEvent} primary btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIcon btnText="Search" default icon="fa fa-fw fa-search" />
+                        <ButtonIcon onClick={this.onClickTestEvent} btnText="Search" defaultIcon icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIcon border default btnText="Search" icon="fa fa-fw fa-search" />
+                        <ButtonIcon onClick={this.onClickTestEvent} border defaultIcon btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIcon btnText="Search" icon="fa fa-fw fa-search" />
+                        <ButtonIcon onClick={this.onClickTestEvent} btnText="Search" icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle icon="fa fa-fw fa-save text-blue-900" />
+                        <ButtonIconCircle onClick={this.onClickTestEvent} icon="fa fa-fw fa-save text-blue-900" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle primary icon="fa fa-fw fa-search" />
+                        <ButtonIconCircle onClick={this.onClickTestEvent} primary icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle primary btnText="M" />
+                        <ButtonIconCircle onClick={this.onClickTestEvent} primary btnText="M" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle shadow icon="fa fa-fw fa-search" />
+                        <ButtonIconCircle onClick={this.onClickTestEvent} shadow icon="fa fa-fw fa-search" />
                      </div>
                      <div className="py-3">
-                        <ButtonIconCircle border icon="fa fa-fw fa-search" />
+                        <ButtonIconCircle onClick={this.onClickTestEvent} border icon="fa fa-fw fa-search" />
                      </div>
                   </div>
                </div>

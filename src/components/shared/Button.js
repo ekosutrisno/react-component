@@ -44,7 +44,6 @@ export class ButtonPrimary extends Component {
 export class ButtonLink extends Component {
    render() {
       const { href, btnText } = this.props;
-
       return (
          <a href={href} className="py-1 px-6 text-blue-900 text-sm hover:text-gray-500">{btnText}</a>
       );
@@ -66,6 +65,7 @@ export class ButtonText extends Component {
    }
 }
 
+// All props type and check
 ButtonDefault.propTypes = {
    btnText: PropTypes.string,
    border: PropTypes.bool,
