@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ButtonDefault, ButtonPrimary, ButtonLink, ButtonText } from '../components/shared/Button';
 import { ButtonIcon, ButtonIconCircle } from '../components/shared/ButtonIcon';
 import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/shared/ButtonBlock';
+import ButtonMultiselect from '../components/buttons/ButtonMultiselect';
 
 export class ButtonsView extends Component {
    onClickTestEvent() {
@@ -163,10 +164,10 @@ export class ButtonsView extends Component {
                <div className="image max-h-full p-6 border-t border-gray-300">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3 w-full">
-                        <ButtonBlock primary btnText="Primary Button 2" />
+                        <ButtonBlock onClick={this.onClickTestEvent} primary btnText="Primary Button 2" />
                      </div>
                      <div className="py-3 w-full">
-                        <ButtonBlock shadow btnText="Primary Button 2" />
+                        <ButtonBlock onClick={this.onClickTestEvent} shadow btnText="Primary Button 2" />
                      </div>
                      <div className="py-3 w-full">
                         <ButtonBlockText href="" btnText="Primary Button 2" />
@@ -197,7 +198,7 @@ export class ButtonsView extends Component {
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3 w-full">
                         {/* <ButtonBlock primary btnText="Primary Button 2" /> */}
-                        For Mulitple Button Section
+                        <ButtonMultiselect />
                      </div>
                   </div>
                </div>
