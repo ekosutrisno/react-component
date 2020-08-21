@@ -17,9 +17,6 @@
   @apply font-medium ;
 }
 
-
-
-
 @tailwind components;
 
 @tailwind utilities;

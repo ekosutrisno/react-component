@@ -1,11 +1,16 @@
 import React from 'react';
-import Header from '../components/shared/Header';
+// import Header from '../components/shared/Header';
+import HeaderFragment from '../components/layouts/HeaderFragment';
+import FooterFragment from '../components/layouts/FooterFragment';
+import MainFragment from '../components/layouts/MainFragment';
 import './App.css';
 
 function App() {
   return (
-    <div className="bg-gray-200 min-h-screen">
-      <Header />
+    <div className="min-h-screen bg-gray-900">
+      <HeaderFragment />
+      <MainFragment />
+      <FooterFragment />
     </div>
   );
 }

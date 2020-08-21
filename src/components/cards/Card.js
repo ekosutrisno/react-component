@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import SyntaxHighlighter from 'react-syntax-highlighter';
-import { docco } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { atomOneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 
 export class Card extends Component {
@@ -12,11 +12,15 @@ export class Card extends Component {
    }
 
    render() {
-      const { title, description, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
+      const { title, bgColor, customClass, description, content, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
 
-      let className = "flex-col justify-start h-full bg-white rounded-lg shadow-md";
-      if (small)
+      let className = `flex-col justify-start h-full rounded-lg shadow-md ${customClass}`;
+      if (small) {
          className += ' max-w-md ';
+      }
+      if (bgColor) {
+         className += ' bg-' + bgColor;
+      }
 
       return (
          <div className={className}>
@@ -24,9 +28,14 @@ export class Card extends Component {
                {title}
             </div>
             <div className="image max-h-full p-6 border-t border-gray-300">
-               <div className={imgHeight == null ? 'mx-auto w-full h-32' : 'mx-auto w-full h-' + imgHeight} >
-                  <img className="object-cover w-full h-full" src={src} alt={alt} />
-               </div>
+               {
+                  src ? <div className={imgHeight == null ? 'mx-auto w-full h-32' : 'mx-auto w-full h-' + imgHeight} >
+                     <img className="object-cover w-full h-full" src={src} alt={alt} />
+                  </div> : null
+               }
+               {
+                  content
+               }
             </div>
             <div className="descriptions h-auto p-6 border-t border-gray-300">
                <p>{description}</p>
@@ -39,11 +48,12 @@ export class Card extends Component {
             </div>
             {
                this.state.showCode ?
-                  <div className="code-block h-auto p-6 border-t border-gray-300">
+                  <div className="code-block h-auto p-6 border-t border-gray-300 rounded-b overflow-hidden">
                      <SyntaxHighlighter
                         language={codeLang}
-                        style={docco}
+                        style={atomOneDark}
                         wrapLines={true}
+                        className="rounded text-sm"
                      >
                         {/* All code block wil appear in here */}
                         {codeBlock}
@@ -64,7 +74,10 @@ Card.propTypes = {
    small: PropTypes.bool,
    squareBtnAct: PropTypes.func,
    copyBtnAct: PropTypes.func,
-   codeBlock: PropTypes.any
+   codeBlock: PropTypes.any,
+   content: PropTypes.any,
+   bgColor: PropTypes.string,
+   customClass: PropTypes.string,
 };
 
 export default Card;
