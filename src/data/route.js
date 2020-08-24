@@ -1,5 +1,6 @@
 const dataRouter = {
    // activePath: props.location.pathname,
+
    generalSubItems: [
       {
          path: '/button', /* path is used as id to check which NavItem is active basically */
@@ -43,36 +44,28 @@ const dataRouter = {
          name: 'devider',
          css: 'fa fa-fw fa-home',
          label: 'Devider',
-         key: 4 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
+         key: 6 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
       },
       {
          path: '/grid',
          name: 'grid',
          css: 'fa fa-fw fa-clock',
          label: 'Grid',
-         key: 5
+         key: 7
       },
       {
          path: '/layout',
          name: 'layout',
          css: 'fas fa-hashtag',
          label: 'Layout',
-         key: 6
+         key: 8
       },
       {
          path: '/space',
          name: 'space',
          css: 'fas fa-hashtag',
          label: 'Space',
-         key: 7
-      },
-      //Cuma buat testing layout aja
-      {
-         path: '/testlayout',
-         name: 'testlayout',
-         css: 'fas fa-hashtag',
-         label: 'TestLayout',
-         key: 4
+         key: 9
       },
    ],
    navigationSubItems: [
@@ -81,49 +74,49 @@ const dataRouter = {
          name: 'affix',
          css: 'fa fa-fw fa-home',
          label: 'Affix',
-         key: 8 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
+         key: 10 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
       },
       {
          path: '/breadcrumb',
          name: 'breadcrumb',
          css: 'fa fa-fw fa-clock',
          label: 'Breadcrumb',
-         key: 9
+         key: 11
       },
       {
          path: '/dropdown',
          name: 'dropdown',
          css: 'fas fa-hashtag',
          label: 'Dropdown',
-         key: 10
+         key: 12
       },
       {
          path: '/menu',
          name: 'menu',
          css: 'fas fa-hashtag',
          label: 'Menu',
-         key: 11
+         key: 13
       },
       {
          path: '/pagination',
          name: 'pagination',
          css: 'fa fa-fw fa-clock',
          label: 'Pagination',
-         key: 12
+         key: 14
       },
       {
          path: '/pageHeader',
          name: 'pageheader',
          css: 'fas fa-hashtag',
          label: 'Page Header',
-         key: 13
+         key: 15
       },
       {
          path: '/steps',
          name: 'steps',
          css: 'fas fa-hashtag',
          label: 'Steps',
-         key: 14
+         key: 16
       },
    ],
    dataEntrySubItems: [
@@ -132,119 +125,142 @@ const dataRouter = {
          name: 'autoComplete',
          css: 'fa fa-fw fa-home',
          label: 'Auto Complete',
-         key: 15 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
+         key: 17 /* Key is required, else console throws error. Does this please you Mr. Browser?! */
       },
       {
          path: '/checbox',
          name: 'checkbox',
          css: 'fa fa-fw fa-clock',
          label: 'Checkbox',
-         key: 16
+         key: 18
       },
       {
          path: '/cascader',
          name: 'cascader',
          css: 'fas fa-hashtag',
          label: 'Cascader',
-         key: 17
+         key: 19
       },
       {
          path: '/datePicker',
          name: 'datePicker',
          css: 'fas fa-hashtag',
          label: 'Date Picker',
-         key: 18
+         key: 20
       },
       {
          path: '/form',
          name: 'form',
          css: 'fa fa-fw fa-clock',
          label: 'Form',
-         key: 19
+         key: 21
       },
       {
          path: '/inputNumber',
          name: 'inputNumber',
          css: 'fas fa-hashtag',
          label: 'Input Number',
-         key: 20
+         key: 22
       },
       {
          path: '/input',
          name: 'input',
          css: 'fas fa-hashtag',
          label: 'Input',
-         key: 21
+         key: 23
       },
       {
          path: '/mentions',
          name: 'mentions',
          css: 'fa fa-fw fa-clock',
          label: 'Mentions',
-         key: 22
+         key: 24
       },
       {
          path: '/rate',
          name: 'rate',
          css: 'fas fa-hashtag',
          label: 'Rate',
-         key: 23
+         key: 25
       },
       {
          path: '/radio',
          name: 'radio',
          css: 'fas fa-hashtag',
          label: 'Radio',
-         key: 24
+         key: 26
       },
       {
          path: '/switch',
          name: 'switch',
          css: 'fa fa-fw fa-clock',
          label: 'Switch',
-         key: 25
+         key: 27
       },
       {
          path: '/slider',
          name: 'slider',
          css: 'fas fa-hashtag',
          label: 'Slider',
-         key: 26
+         key: 28
       },
       {
          path: '/select',
          name: 'select',
          css: 'fas fa-hashtag',
          label: 'Select',
-         key: 27
+         key: 29
       },
       {
          path: '/treeSelect',
          name: 'treeSelect',
          css: 'fas fa-hashtag',
          label: 'Tree Select',
-         key: 28
+         key: 30
       },
       {
          path: '/transfer',
          name: 'transfer',
          css: 'fas fa-hashtag',
          label: 'Transfer',
-         key: 29
+         key: 31
       },
       {
          path: '/timePicker',
          name: 'timePicker',
          css: 'fa fa-fw fa-clock',
          label: 'Time Picker',
-         key: 30
+         key: 32
       },
       {
          path: '/upload',
          name: 'upload',
          css: 'fas fa-hashtag',
          label: 'Upload',
-         key: 31
+         key: 33
+      },
+   ],
+   defaultSubInto: [
+      {
+         path: '/introduction',
+         name: 'introduction',
+         css: 'fa fa-fw fa-info',
+         label: 'Introduction',
+         key: 34
+      },
+      {
+         path: '/installation',
+         name: 'installation',
+         css: 'fas fa-gear',
+         label: 'Installation',
+         key: 35
+      },
+      {
+         path: '/config',
+         name: 'config',
+         css: 'fas fa-question',
+         label: 'Config',
+         key: 36
       },
    ],
 };

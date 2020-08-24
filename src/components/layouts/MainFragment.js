@@ -1,16 +1,13 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import dataSwitch from '../../data/switch';
 import AsideFragment from '../layouts/AsideFragment';
-import ButtonsView from '../../pages/ButtonsView';
-import CardsView from '../../pages/CardsView';
-import ButtonContentView from '../../components/contents/ButtonContentView';
-
-import {
-   BrowserRouter as Router,
-   Switch,
-   Route,
-} from "react-router-dom";
 
 export class MainFragment extends Component {
+   constructor(props) {
+      super(props);
+      this.state = dataSwitch;
+   }
 
    render() {
 
@@ -26,10 +23,13 @@ export class MainFragment extends Component {
                         <div className="px-4">
                            {/* Switcing Content and Route  */}
                            <Switch>
-                              <Route path="/button" component={ButtonsView} />
-                              <Route path="/icon" component={CardsView} />
-                              <Route path="/card" component={ButtonContentView} />
-                              <Route path="/card-code" component={CardsView} />
+                              {
+                                 this.state.routerD.map((item) => {
+                                    return (
+                                       <Route path={item.path} component={item.component} key={item.key} />
+                                    );
+                                 })
+                              }
                            </Switch>
 
                            <div className="pt-4 pb-4 lg:px-8 flex"><a href="https://github.com/ekosutrisno/react-component" target="_blank" rel="noopener noreferrer" className="text-gray-400 text-sm font-medium hover:underline flex items-center">

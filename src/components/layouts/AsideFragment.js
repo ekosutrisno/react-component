@@ -15,7 +15,7 @@ export class AsideFragment extends Component {
    };
 
    render() {
-      const { generalSubItems, layoutSubItems, navigationSubItems, dataEntrySubItems } = this.state;
+      const { generalSubItems, layoutSubItems, navigationSubItems, dataEntrySubItems, defaultSubInto } = this.state;
       let customInputStyle = { marginTop: 37 + 'px', display: 'none' };
       return (
          <aside className="w-full lg:w-1/5 lg:block fixed lg:relative inset-0 mt-16 lg:mt-0 z-30 bg-gray-900 lg:bg-transparent hidden">
@@ -40,27 +40,19 @@ export class AsideFragment extends Component {
                   <li className="mb-4">
                      <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Getting started</h3>
                      <ul>
-                        <li className="text-gray-300">
-                           <Link aria-current="page"
-                              to="/"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Intoduction
+                        {
+                           defaultSubInto.map((item) => {
+                              return (
+                                 <li className="text-gray-300" key={item.key}>
+                                    <Link aria-current="page"
+                                       to={item.path}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-start text-gray-300 hover:text-green-400">
+                                       <span>{item.label}</span>
                                     </Link>
-                        </li>
-                        <li className="text-gray-300">
-                           <Link aria-current="page"
-                              to="/"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Installation
-                                    </Link>
-                        </li>
-                        <li className="text-gray-300">
-                           <Link aria-current="page"
-                              to="/"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Congiguration
-                                    </Link>
-                        </li>
+                                 </li>
+                              );
+                           })
+                        }
                      </ul>
                   </li>
                   <li className="mb-4">
@@ -69,11 +61,11 @@ export class AsideFragment extends Component {
                         {
                            generalSubItems.map((item) => {
                               return (
-                                 <li className="text-gray-300">
+                                 <li className="text-gray-300" key={item.key}>
                                     <Link aria-current="page"
                                        to={item.path}
-                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                                       {item.label}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-start text-gray-300 hover:text-green-400">
+                                       <span>{item.label}</span>
                                     </Link>
                                  </li>
                               );
@@ -87,7 +79,7 @@ export class AsideFragment extends Component {
                         {
                            layoutSubItems.map((item) => {
                               return (
-                                 <li className="text-gray-300">
+                                 <li className="text-gray-300" key={item.key}>
                                     <Link aria-current="page"
                                        to={item.path}
                                        className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
@@ -105,7 +97,7 @@ export class AsideFragment extends Component {
                         {
                            navigationSubItems.map((item) => {
                               return (
-                                 <li className="text-gray-300">
+                                 <li className="text-gray-300" key={item.key}>
                                     <Link aria-current="page"
                                        to={item.path}
                                        className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
@@ -123,7 +115,7 @@ export class AsideFragment extends Component {
                         {
                            dataEntrySubItems.map((item) => {
                               return (
-                                 <li className="text-gray-300">
+                                 <li className="text-gray-300" key={item.key}>
                                     <Link aria-current="page"
                                        to={item.path}
                                        className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
@@ -133,6 +125,18 @@ export class AsideFragment extends Component {
                               );
                            })
                         }
+                     </ul>
+                  </li>
+                  <li className="mb-4">
+                     <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Community</h3>
+                     <ul>
+                        <li className="text-gray-300">
+                           <Link aria-current="page"
+                              to="/released"
+                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-start text-gray-300 hover:text-green-400">
+                              <span>Released</span>
+                           </Link>
+                        </li>
                      </ul>
                   </li>
                </ul>
