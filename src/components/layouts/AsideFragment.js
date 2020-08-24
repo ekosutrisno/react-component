@@ -1,7 +1,21 @@
 import React, { Component } from 'react';
+import dataRouter from '../../data/route';
+import {
+   Link
+} from "react-router-dom";
 
 export class AsideFragment extends Component {
+   constructor(props) {
+      super(props);
+      this.state = dataRouter;
+   }
+
+   onItemClick = (path) => {
+      this.setState({ activePath: path });
+   };
+
    render() {
+      const { generalSubItems, layoutSubItems, navigationSubItems, dataEntrySubItems } = this.state;
       let customInputStyle = { marginTop: 37 + 'px', display: 'none' };
       return (
          <aside className="w-full lg:w-1/5 lg:block fixed lg:relative inset-0 mt-16 lg:mt-0 z-30 bg-gray-900 lg:bg-transparent hidden">
@@ -27,69 +41,98 @@ export class AsideFragment extends Component {
                      <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Getting started</h3>
                      <ul>
                         <li className="text-gray-300">
-                           <button aria-current="page"
+                           <Link aria-current="page"
+                              to="/"
                               className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Introduction
-                                    </button>
+                              Intoduction
+                                    </Link>
                         </li>
                         <li className="text-gray-300">
-                           <button aria-current="page"
+                           <Link aria-current="page"
+                              to="/"
                               className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
                               Installation
-                                    </button>
+                                    </Link>
                         </li>
                         <li className="text-gray-300">
-                           <button aria-current="page"
+                           <Link aria-current="page"
+                              to="/"
                               className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              What News?
-                                    </button>
+                              Congiguration
+                                    </Link>
                         </li>
                      </ul>
                   </li>
                   <li className="mb-4">
                      <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Components</h3>
                      <ul>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Makan Nasi
-                                    </button>
-                        </li>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Minum Susu
-                                    </button>
-                        </li>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Mandi di sungai
-                                    </button>
-                        </li>
+                        {
+                           generalSubItems.map((item) => {
+                              return (
+                                 <li className="text-gray-300">
+                                    <Link aria-current="page"
+                                       to={item.path}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
+                                       {item.label}
+                                    </Link>
+                                 </li>
+                              );
+                           })
+                        }
                      </ul>
                   </li>
                   <li className="mb-4">
-                     <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Kegiatan</h3>
+                     <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Layout</h3>
                      <ul>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Besok Libur
-                                    </button>
-                        </li>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Lusa libur
-                                    </button>
-                        </li>
-                        <li className="text-gray-300">
-                           <button aria-current="page"
-                              className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
-                              Sampai Senin
-                                    </button>
-                        </li>
+                        {
+                           layoutSubItems.map((item) => {
+                              return (
+                                 <li className="text-gray-300">
+                                    <Link aria-current="page"
+                                       to={item.path}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
+                                       {item.label}
+                                    </Link>
+                                 </li>
+                              );
+                           })
+                        }
+                     </ul>
+                  </li>
+                  <li className="mb-4">
+                     <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Navigation</h3>
+                     <ul>
+                        {
+                           navigationSubItems.map((item) => {
+                              return (
+                                 <li className="text-gray-300">
+                                    <Link aria-current="page"
+                                       to={item.path}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
+                                       {item.label}
+                                    </Link>
+                                 </li>
+                              );
+                           })
+                        }
+                     </ul>
+                  </li>
+                  <li className="mb-4">
+                     <h3 className="mb-2 text-gray-500 uppercase tracking-wider font-bold text-sm lg:text-xs">Data Entry</h3>
+                     <ul>
+                        {
+                           dataEntrySubItems.map((item) => {
+                              return (
+                                 <li className="text-gray-300">
+                                    <Link aria-current="page"
+                                       to={item.path}
+                                       className="px-2 w-full focus:outline-none focus:bg-green-600 focus:bg-opacity-50 focus:text-gray-300 rounded font-medium py-1 flex items-center justify-between text-gray-300 hover:text-green-400">
+                                       {item.label}
+                                    </Link>
+                                 </li>
+                              );
+                           })
+                        }
                      </ul>
                   </li>
                </ul>
