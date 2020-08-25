@@ -14,7 +14,7 @@ export class ButtonMultiselect extends Component {
 
    render() {
 
-      let divClassName = "p-5 flex flex-col";
+      let divClassName = "p-5 flex flex-col text-gray-900";
       let inputClassName = "py-2 px-4 w-full bg-white rounded-t-md focus:outline-none shadow";
       let optionClassName = "py-2 w-full bg-white rounded-b-md border-t-2 shadow-md h-auto";
       let itemClassName = "py-2 px-4 mb-1 bg-white w-full text-left hover:bg-gray-300 transition-color duration-100 focus:outline-none";

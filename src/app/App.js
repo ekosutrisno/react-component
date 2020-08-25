@@ -1,5 +1,4 @@
 import React from 'react';
-// import Header from '../components/shared/Header';
 import HeaderFragment from '../components/layouts/HeaderFragment';
 import FooterFragment from '../components/layouts/FooterFragment';
 import MainFragment from '../components/layouts/MainFragment';

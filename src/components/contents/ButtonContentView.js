@@ -45,8 +45,7 @@ export class MainFragment extends Component {
 
       return (
          <section>
-            <h1 className="text-2xl text-gray-300 lg:pt-12">Installation</h1>
-            {/* Nanti kontent akan dinamic */}
+            <h1 className="text-2xl text-gray-300 lg:pt-12">Test 01</h1>
             <article className="text-gray-300 py-3 space-y-6">
                <Card
                   githubBtnUri="https://github.com/ekosutrisno/react-component/"
