@@ -30,18 +30,21 @@ export class CardsView extends Component {
                copyBtnAct={this.copyAction}
                codeBlock={codeBlock}
                description={description}
+               bgColor="gray-300"
+               borderColor="border-gray-400"
                codeLang="javascript"
                title="Card Title 01"
                src="https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=300" />
 
-            <div className="flex pt-4 flex-wrap lg:space-x-6">
+            <div className="flex pt-4 flex-wrap space-y-3">
                <Card
                   githubBtnUri="https://github.com/ekosutrisno/react-component/"
                   squareBtnAct={this.squareAction}
                   copyBtnAct={this.copyAction}
-                  small
                   codeBlock={codeBlock}
                   description={description}
+                  bgColor="gray-300"
+                  borderColor="border-gray-400"
                   codeLang="javascript"
                   title="Card Title 02"
                   src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
@@ -51,9 +54,10 @@ export class CardsView extends Component {
                   githubBtnUri="https://github.com/ekosutrisno/react-component/"
                   squareBtnAct={this.squareAction}
                   copyBtnAct={this.copyAction}
-                  small
                   codeBlock={codeBlock}
                   description={description}
+                  bgColor="gray-300"
+                  borderColor="border-gray-400"
                   codeLang="javascript"
                   title="Card Title 03"
                   src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"

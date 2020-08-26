@@ -12,7 +12,7 @@ export class Card extends Component {
    }
 
    render() {
-      const { title, bgColor, customClass, description, content, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
+      const { title, bgColor, borderColor, customClass, description, content, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
 
       let className = `flex-col justify-start h-full rounded-lg shadow-md ${customClass}`;
       if (small) {
@@ -27,7 +27,7 @@ export class Card extends Component {
             <div className="header h-16 p-6 font-semibold">
                {title}
             </div>
-            <div className="image max-h-full p-6 border-t border-gray-300">
+            <div className={`image max-h-full p-6 border-t ${borderColor}`}>
                {
                   src ? <div className={imgHeight == null ? 'mx-auto w-full h-32' : 'mx-auto w-full h-' + imgHeight} >
                      <img className="object-cover w-full h-full" src={src} alt={alt} />
@@ -37,10 +37,10 @@ export class Card extends Component {
                   content
                }
             </div>
-            <div className="descriptions h-auto p-6 border-t border-gray-300">
+            <div className={`descriptions h-auto p-6 border-t ${borderColor}`}>
                <p>{description}</p>
             </div>
-            <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-8">
+            <div className={`footer flex items-center justify-end h-16 p-6 border-t ${borderColor} space-x-8`}>
                <a href={githubBtnUri} target={'blank'} className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700">{}</a>
                <button onClick={squareBtnAct} className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                <button onClick={copyBtnAct} className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
@@ -48,7 +48,7 @@ export class Card extends Component {
             </div>
             {
                this.state.showCode ?
-                  <div className="code-block h-auto p-6 border-t border-gray-300 rounded-b overflow-hidden">
+                  <div className={`code-block h-auto p-6 border-t rounded-b overflow-hidden ${borderColor}`}>
                      <SyntaxHighlighter
                         language={codeLang}
                         style={atomOneDark}
@@ -77,6 +77,7 @@ Card.propTypes = {
    codeBlock: PropTypes.any,
    content: PropTypes.any,
    bgColor: PropTypes.string,
+   borderColor: PropTypes.string,
    customClass: PropTypes.string,
 };
 

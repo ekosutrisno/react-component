@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { ButtonDefault, ButtonPrimary, ButtonLink, ButtonText } from '../components/shared/Button';
 import { ButtonIcon, ButtonIconCircle } from '../components/shared/ButtonIcon';
 import { ButtonBlock, ButtonBlockText, ButtonBlockLink } from '../components/shared/ButtonBlock';
-import ButtonMultiselect from '../components/buttons/ButtonMultiselect';
 
 export class ButtonsView extends Component {
    onClickTestEvent() {
@@ -19,11 +18,11 @@ export class ButtonsView extends Component {
       return (
          <div className="mx-auto box-border items-center justify-between flex flex-wrap container py-5 space-y-2">
             {/* Card 01 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-auto bg-gray-300 rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Type
                </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
+               <div className="image max-h-full p-6 border-t border-gray-400">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3">
                         <ButtonPrimary
@@ -67,12 +66,12 @@ export class ButtonsView extends Component {
                      </div>
                   </div>
                </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
+               <div className="descriptions h-auto p-6 border-t border-gray-400">
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
                   dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
                   velit unde quo nobis libero a.</p>
                </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
+               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-400 space-x-4">
                   <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
@@ -80,11 +79,11 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 02 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-auto bg-gray-300 rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Icon
                </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
+               <div className="image max-h-full p-6 border-t border-gray-400">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3">
                         <ButtonIcon onClick={this.onClickTestEvent} primary btnText="Search" icon="fa fa-fw fa-search" />
@@ -115,12 +114,12 @@ export class ButtonsView extends Component {
                      </div>
                   </div>
                </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
+               <div className="descriptions h-auto p-6 border-t border-gray-400">
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
                   dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
                   velit unde quo nobis libero a.</p>
                </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
+               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-400 space-x-4">
                   <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
@@ -128,11 +127,11 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 03 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-auto bg-gray-300 rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Ghost Button
                </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
+               <div className="image max-h-full p-6 border-t border-gray-400">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="flex items-center justify-center p-5 rounded-lg bg-gray-900 w-full">
                         <div className="py-3">
@@ -144,12 +143,12 @@ export class ButtonsView extends Component {
                      </div>
                   </div>
                </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
+               <div className="descriptions h-auto p-6 border-t border-gray-400">
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
                   dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
                   velit unde quo nobis libero a.</p>
                </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
+               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-400 space-x-4">
                   <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
@@ -157,11 +156,11 @@ export class ButtonsView extends Component {
                </div>
             </div>
             {/* Card 04 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
+            <div className="flex-col justify-start h-full w-auto bg-gray-300 rounded-lg shadow-md">
                <div className="header h-16 p-6 font-semibold">
                   Block Button
                </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
+               <div className="image max-h-full p-6 border-t border-gray-400">
                   <div className="flex flex-wrap justify-evenly items-center">
                      <div className="py-3 w-full">
                         <ButtonBlock onClick={this.onClickTestEvent} primary btnText="Primary Button 2" />
@@ -177,69 +176,18 @@ export class ButtonsView extends Component {
                      </div>
                   </div>
                </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
+               <div className="descriptions h-auto p-6 border-t border-gray-400">
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
                   dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
                   velit unde quo nobis libero a.</p>
                </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
+               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-400 space-x-4">
                   <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
                   <button className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
                </div>
             </div>
-            {/* Card 05 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
-               <div className="header h-16 p-6 font-semibold">
-                  Mulitple Button
-               </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
-                  <div className="flex flex-wrap justify-evenly items-center">
-                     <div className="py-3 w-full">
-                        {/* <ButtonBlock primary btnText="Primary Button 2" /> */}
-                        <ButtonMultiselect />
-                     </div>
-                  </div>
-               </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
-                  dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
-                  velit unde quo nobis libero a.</p>
-               </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
-                  <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
-               </div>
-            </div>
-            {/* Card 06 */}
-            <div className="flex-col justify-start h-full w-70 bg-white rounded-lg shadow-md">
-               <div className="header h-16 p-6 font-semibold">
-                  Loading Button
-               </div>
-               <div className="image max-h-full p-6 border-t border-gray-300">
-                  <div className="flex flex-wrap justify-evenly items-center">
-                     <div className="py-3 w-full">
-                        {/* <ButtonBlock primary btnText="Primary Button 2" /> */}
-                        For Loading Button
-                     </div>
-                  </div>
-               </div>
-               <div className="descriptions h-auto p-6 border-t border-gray-300">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab ullam dolorum eum rem,
-                  dicta dignissimos id, eaque sint dolore sed maiores itaque ducimus qui,
-                  velit unde quo nobis libero a.</p>
-               </div>
-               <div className="footer flex items-center justify-end h-16 p-6 border-t border-gray-300 space-x-4">
-                  <button className="fab fa-fw fa-github fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="fa fa-fw fa-vector-square fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="far fa-fw fa-clone fa-lg focus:outline-none hover:text-gray-700"></button>
-                  <button className="fa fa-fw fa-code fa-lg focus:outline-none hover:text-gray-700"></button>
-               </div>
-            </div>
-
          </div>
       );
    }
