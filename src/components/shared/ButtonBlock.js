@@ -10,9 +10,9 @@ export class ButtonBlock extends Component {
          className += ' shadow-md';
 
       if (primary) {
-         className += ' btn-primary';
+         className += ' py-1 px-6 rounded-lg font-semibold bg-blue-900 text-gray-200';
       } else {
-         className += ' btn-default ';
+         className += ' py-1 px-6 rounded-lg font-semibold bg-white text-blue-900';
       }
 
       return (

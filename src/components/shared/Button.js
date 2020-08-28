@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export class ButtonDefault extends Component {
    render() {
       const { border, shadow, btnText, onClick, onHover, onFocus } = this.props;
-      let className = "btn-default focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
+      let className = "py-1 px-6 rounded-lg font-semibold bg-white text-blue-900 focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
       if (border) {
          className += ' border border-blue-900';
       }
@@ -25,7 +25,7 @@ export class ButtonDefault extends Component {
 export class ButtonPrimary extends Component {
    render() {
       const { shadow, btnText, onClick, onHover, onFocus } = this.props;
-      let className = "btn-primary focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
+      let className = "py-1 px-6 rounded-lg font-semibold bg-blue-900 text-gray-200 focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
       if (shadow)
          className += ' shadow-md';
 

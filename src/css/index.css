@@ -579,36 +579,6 @@ video {
   height: auto;
 }
 
-.btn-primary{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-radius: 0.5rem;
-  --bg-opacity: 1;
-  background-color: #2a4365;
-  background-color: rgba(42, 67, 101, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #edf2f7;
-  color: rgba(237, 242, 247, var(--text-opacity));
-  font-weight: 500;
-}
-
-.btn-default{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  border-radius: 0.5rem;
-  --bg-opacity: 1;
-  background-color: #fff;
-  background-color: rgba(255, 255, 255, var(--bg-opacity));
-  --text-opacity: 1;
-  color: #2a4365;
-  color: rgba(42, 67, 101, var(--text-opacity));
-  font-weight: 500;
-}
-
 .container{
   width: 100%;
 }

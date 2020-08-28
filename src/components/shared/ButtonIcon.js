@@ -6,9 +6,9 @@ export class ButtonIcon extends Component {
       const { defaultIcon, primary, border, icon, btnText, onClick, onHover, onFocus } = this.props;
       let className = "focus:outline-none hover:bg-gray-300 hover:text-blue-900 hover:shadow-sm transition-all duration-200 ease-in-out focus:bg-gray-200 focus:text-blue-900";
       if (primary) {
-         className += ' btn-primary';
+         className += ' py-1 px-6 rounded-lg font-semibold bg-blue-900 text-gray-200';
       } else if (defaultIcon) {
-         className += ' btn-default shadow-md';
+         className += ' py-1 px-6 rounded-lg font-semibold bg-white text-blue-900 shadow-md';
       } else {
          className = ' py-2 px-6 text-blue-900 hover:text-blue-700 focus:outline-none';
       }
