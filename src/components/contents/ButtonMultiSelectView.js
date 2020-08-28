@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ButtonMultiselect from '../buttons/ButtonMultiselect';
 import { ButtonLoading, ButtonLoadingCircle } from '../buttons/LoadingButton';
+import { ArrowDropDown } from '../shared/IconAsset';
 import Card from '../cards/Card';
 
 export class ButtonMultiSelectView extends Component {
@@ -49,6 +50,9 @@ export class MainFragment extends Component {
                      title="Testing ButtonMultiselect"
                   />
                </article>
+               <div className="my-4">
+                  <ArrowDropDown />
+               </div>
             </div>
             <div>
                <h1 className="flex items-center text-2xl text-gray-300 lg:pt-12">
