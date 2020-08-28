@@ -18,126 +18,126 @@ export class BorderColor extends Component {
 export class Cancel extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_cancel.png" alt="" />
+         <img src={baseAsset + '/mdi_cancel.png'} alt="" />
       );
    }
 }
 export class Check extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_check.png" alt="" />
+         <img src={baseAsset + '/mdi_check.png'} alt="" />
       );
    }
 }
 export class CheckBox extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_check_box.png" alt="" />
+         <img src={baseAsset + '/mdi_check_box.png'} alt="" />
       );
    }
 }
 export class CheckBoxOutlineBlankDisable extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_check_box_outline_blank disable.png" alt="" />
+         <img src={baseAsset + '/mdi_check_box_outline_blank disable.png'} alt="" />
       );
    }
 }
 export class CheckBoxOutlineBlankEnable extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_check_box_outline_blank enable.png" alt="" />
+         <img src={baseAsset + '/mdi_check_box_outline_blank enable.png'} alt="" />
       );
    }
 }
 export class CheckCircle extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_check_circle.png" alt="" />
+         <img src={baseAsset + '/mdi_check_circle.png'} alt="" />
       );
    }
 }
 export class Close extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_close.png" alt="" />
+         <img src={baseAsset + '/mdi_close.png'} alt="" />
       );
    }
 }
 export class DeleteForever extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_delete_forever.png" alt="" />
+         <img src={baseAsset + '/mdi_delete_forever.png'} alt="" />
       );
    }
 }
 export class Error extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_error.png" alt="" />
+         <img src={baseAsset + '/mdi_error.png'} alt="" />
       );
    }
 }
 export class IndetereminateCheckBox extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_indeterminate_check_box.png" alt="" />
+         <img src={baseAsset + '/mdi_indeterminate_check_box.png'} alt="" />
       );
    }
 }
 export class Inspect extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_inspect.png" alt="" />
+         <img src={baseAsset + '/mdi_inspect.png'} alt="" />
       );
    }
 }
 export class Keyboard extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_keyboard.png" alt="" />
+         <img src={baseAsset + '/mdi_keyboard.png'} alt="" />
       );
    }
 }
 export class Menu extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_menu.png" alt="" />
+         <img src={baseAsset + '/mdi_menu.png'} alt="" />
       );
    }
 }
 export class OpenInNew extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_open_in_new.png" alt="" />
+         <img src={baseAsset + '/mdi_open_in_new.png'} alt="" />
       );
    }
 }
 export class Save extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_save.png" alt="" />
+         <img src={baseAsset + '/mdi_save.png'} alt="" />
       );
    }
 }
 export class Search extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_search.png" alt="" />
+         <img src={baseAsset + '/mdi_search.png'} alt="" />
       );
    }
 }
 export class SwapVert extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_swap_vert.png" alt="" />
+         <img src={baseAsset + '/mdi_swap_vert.png'} alt="" />
       );
    }
 }
 export class Today extends Component {
    render() {
       return (
-         <img src="../../assets/Icon/mdi_today.png" alt="" />
+         <img src={baseAsset + '/mdi_today.png'} alt="" />
       );
    }
 }

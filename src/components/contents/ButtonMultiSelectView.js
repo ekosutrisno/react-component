@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ButtonMultiselect from '../buttons/ButtonMultiselect';
 import { ButtonLoading, ButtonLoadingCircle } from '../buttons/LoadingButton';
 import { ArrowDropDown, BorderColor, Close, Keyboard } from '../shared/IconAsset';
+import { Cancel, CheckCircle, ErrorGift, Loading } from '../shared/GiftAsset';
 import Card from '../cards/Card';
 
 export class ButtonMultiSelectView extends Component {
@@ -55,6 +56,10 @@ export class MainFragment extends Component {
                   <BorderColor />
                   <Close />
                   <Keyboard />
+                  <Cancel width={50} />
+                  <Loading />
+                  <CheckCircle />
+                  <ErrorGift />
                </div>
             </div>
             <div>
