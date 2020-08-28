@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ButtonMultiselect from '../buttons/ButtonMultiselect';
 import { ButtonLoading, ButtonLoadingCircle } from '../buttons/LoadingButton';
-import { ArrowDropDown } from '../shared/IconAsset';
+import { ArrowDropDown, BorderColor, Close, Keyboard } from '../shared/IconAsset';
 import Card from '../cards/Card';
 
 export class ButtonMultiSelectView extends Component {
@@ -52,6 +52,9 @@ export class MainFragment extends Component {
                </article>
                <div className="my-4">
                   <ArrowDropDown />
+                  <BorderColor />
+                  <Close />
+                  <Keyboard />
                </div>
             </div>
             <div>
