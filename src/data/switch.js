@@ -2,6 +2,8 @@ import ButtonsView from '../pages/ButtonsView';
 import CardsView from '../pages/CardsView';
 import ButtonContentView from '../components/contents/ButtonContentView';
 import ButtonMultiSelectView from '../components/contents/ButtonMultiSelectView';
+import AffixView from '../components/contents/AffixView';
+import OtherView from '../components/contents/OtherView';
 
 const dataSwitch = {
    routerD: [
@@ -23,7 +25,17 @@ const dataSwitch = {
       {
          path: '/card-code',
          component: ButtonMultiSelectView,
-         key: 3
+         key: 4
+      },
+      {
+         path: '/affix',
+         component: AffixView,
+         key: 5
+      },
+      {
+         path: '/anchor',
+         component: OtherView,
+         key: 6
       },
    ]
 };

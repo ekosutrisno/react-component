@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import dataSwitch from '../../data/switch';
 import AsideFragment from '../layouts/AsideFragment';
+import Affix from '../../components/navigation/Affix';
+import { Today } from '../shared/IconAsset';
 
 export class MainFragment extends Component {
    constructor(props) {
@@ -13,6 +15,7 @@ export class MainFragment extends Component {
 
       return (
          <Router>
+            <Affix topLeft top={150} left={20} children={<Today />} />
             <main className="container mx-auto px-4 lg:px-8">
                <div className="flex flex-wrap relative">
                   <AsideFragment />

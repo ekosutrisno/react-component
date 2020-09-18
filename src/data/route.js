@@ -70,7 +70,7 @@ const dataRouter = {
    ],
    navigationSubItems: [
       {
-         path: 'affix/', /* path is used as id to check which NavItem is active basically */
+         path: '/affix', /* path is used as id to check which NavItem is active basically */
          name: 'affix',
          css: 'fa fa-fw fa-home',
          label: 'Affix',
@@ -263,5 +263,35 @@ const dataRouter = {
          key: 36
       },
    ],
+   otherItems: [
+      {
+         path: '/anchor',
+         name: 'anchor',
+         css: 'fa fa-fw fa-info',
+         label: 'Anchor',
+         key: 37
+      },
+      {
+         path: '/back-top',
+         name: 'backtop',
+         css: 'fas fa-gear',
+         label: 'Back top',
+         key: 38
+      },
+      {
+         path: '/config-provider',
+         name: 'configprovider',
+         css: 'fas fa-question',
+         label: 'Config provider',
+         key: 39
+      },
+      {
+         path: '/design',
+         name: 'design',
+         css: 'fas fa-question',
+         label: 'Design',
+         key: 40
+      },
+   ]
 };
 export default dataRouter;
