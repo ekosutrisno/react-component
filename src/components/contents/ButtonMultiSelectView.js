@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import ButtonMultiselect from '../buttons/ButtonMultiselect';
 import { ButtonLoading, ButtonLoadingCircle } from '../buttons/LoadingButton';
-import { ArrowDropDown, BorderColor, Close, Keyboard } from '../shared/IconAsset';
-import { Cancel, CheckCircle, ErrorGift, Loading } from '../shared/GiftAsset';
+// import { ArrowDropDown, BorderColor, Close, Keyboard } from '../shared/IconAsset';
+// import { Cancel, CheckCircle, ErrorGift, Loading } from '../shared/GiftAsset';
 import Card from '../cards/Card';
 
 export class ButtonMultiSelectView extends Component {
@@ -51,7 +51,7 @@ export class MainFragment extends Component {
                      title="Testing ButtonMultiselect"
                   />
                </article>
-               <div className="my-4">
+               {/* <div className="my-4">
                   <ArrowDropDown />
                   <BorderColor />
                   <Close />
@@ -60,7 +60,7 @@ export class MainFragment extends Component {
                   <Loading />
                   <CheckCircle />
                   <ErrorGift />
-               </div>
+               </div> */}
             </div>
             <div>
                <h1 className="flex items-center text-2xl text-gray-300 lg:pt-12">
@@ -73,53 +73,50 @@ export class MainFragment extends Component {
                   <div className="flex flex-wrap items-center justify-around space-y-6">
                      <Card
                         githubBtnUri="https://github.com/ekosutrisno/react-component/"
-                        content={
-                           <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />}
                         codeBlock={codeBtnLoadingPrimary}
                         bgColor="gray-800"
                         customClass="shadow-2xl"
                         codeLang="javascript"
                         description={keterangan}
                         title="Primary ButtonLoading"
-                     />
+                     >
+                        <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
+                     </Card>
                      <Card
                         githubBtnUri="https://github.com/ekosutrisno/react-component/"
-                        content={
-                           <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} defaultIcon icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
-                        }
                         bgColor="gray-800"
                         customClass="shadow-2xl"
                         codeLang="javascript"
                         description={keterangan}
                         codeBlock={codeBtnLoadingPrimary}
                         title="Default ButtonLoading"
-                     />
+                     >
+                        <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} defaultIcon icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
+                     </Card>
                   </div>
                   <div className="flex flex-wrap items-center justify-around space-y-6">
                      <Card
                         githubBtnUri="https://github.com/ekosutrisno/react-component/"
-                        content={
-                           <ButtonLoadingCircle onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
-                        }
                         bgColor="gray-800"
                         customClass="shadow-2xl"
                         codeLang="javascript"
                         description={keterangan}
                         codeBlock={codeBtnLoadingPrimary}
                         title="Circle P ButtonLoading"
-                     />
+                     >
+                        <ButtonLoadingCircle onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
+                     </Card>
                      <Card
                         githubBtnUri="https://github.com/ekosutrisno/react-component/"
-                        content={
-                           <ButtonLoadingCircle onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
-                        }
                         bgColor="gray-800"
                         customClass="shadow-2xl"
                         codeLang="javascript"
                         description={keterangan}
                         codeBlock={codeBtnLoadingPrimary}
                         title="Circle D ButtonLoading"
-                     />
+                     >
+                        <ButtonLoadingCircle onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
+                     </Card>
                   </div>
                </article>
             </div>

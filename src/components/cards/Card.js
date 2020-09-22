@@ -12,7 +12,7 @@ export class Card extends Component {
    }
 
    render() {
-      const { title, bgColor, borderColor, customClass, description, content, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
+      const { title, bgColor, borderColor, customClass, description, imgHeight, src, alt, small, githubBtnUri, squareBtnAct, copyBtnAct, codeBlock, codeLang } = this.props;
 
       let className = `flex-col justify-start h-full rounded-lg shadow-md ${customClass}`;
       if (small) {
@@ -34,7 +34,7 @@ export class Card extends Component {
                   </div> : null
                }
                {
-                  content
+                  this.props.children
                }
             </div>
             <div className={`descriptions h-auto p-6 border-t ${borderColor}`}>
@@ -75,7 +75,6 @@ Card.propTypes = {
    squareBtnAct: PropTypes.func,
    copyBtnAct: PropTypes.func,
    codeBlock: PropTypes.any,
-   content: PropTypes.any,
    bgColor: PropTypes.string,
    borderColor: PropTypes.string,
    customClass: PropTypes.string,

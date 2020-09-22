@@ -4,22 +4,26 @@ const menu = [
 ];
 
 
-function Scroll() {
+function Scroll(props) {
    return (
-      <div className="w-48 text-gray-900">
-         <input className="py-2 px-4 focus:outline-none w-auto" />
-         <Items />
+      <div className="max-w-xs text-gray-900">
+         <div>
+            <input className="py-2 px-4 focus:outline-none w-auto" />
+         </div>
+         <div className="w-full overflow-y-auto h-56">
+            <Items />
+         </div>
       </div>
    );
-
 }
-function Items() {
+
+function Items(props) {
    return (
-      <div className="relative rounded-b-lg w-auto">
-         <div className="flex absolute flex-col items-center h-32 overflow-y-auto">
+      <div className="relative rounded-b-lg">
+         <div className="flex absolute flex-col items-center">
             {menu.map((item, idx) => {
                return <input
-                  className="py-2 px-4 focus:outline-none w-auto"
+                  className="py-2 px-4 focus:outline-none"
                   type="text"
                   key={idx}
                   value={item}

@@ -73,12 +73,13 @@ export class MainFragment extends Component {
                   codeBlock={codeBlock}
                   description={description}
                   borderColor="border-gray-400"
-                  content={<Test />}
                   bgColor="gray-300"
                   customClass="shadow-2xl"
                   codeLang="javascript"
                   title="Card Title 01"
-               />
+               >
+                  <Test />
+               </Card>
             </article>
          </section>
       );

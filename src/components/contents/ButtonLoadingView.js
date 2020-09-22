@@ -21,14 +21,14 @@ export class ButtonMultiSelectView extends Component {
 
                   <Card
                      githubBtnUri="https://github.com/ekosutrisno/react-component/"
-                     content={
-                        <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
-                     }
+
                      bgColor="gray-800"
                      customClass="shadow-2xl"
                      codeLang="javascript"
                      title="Testing ButtonLoading"
-                  />
+                  >
+                     <ButtonLoading btnText="ekosutrisno" onClick={() => { this.setState({ isLoading: !this.state.isLoading }); }} primary icon="fa fa-fw fa-spinner" isLoading={this.state.isLoading} />
+                  </Card>
                </article>
             </div>
          </section>

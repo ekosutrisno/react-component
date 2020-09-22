@@ -4,6 +4,7 @@ import ButtonContentView from '../components/contents/ButtonContentView';
 import ButtonMultiSelectView from '../components/contents/ButtonMultiSelectView';
 import AffixView from '../components/contents/AffixView';
 import OtherView from '../components/contents/OtherView';
+import BreadCumbView from '../components/contents/BreadCumbView';
 
 const dataSwitch = {
    routerD: [
@@ -30,6 +31,11 @@ const dataSwitch = {
       {
          path: '/affix',
          component: AffixView,
+         key: 5
+      },
+      {
+         path: '/breadcrumb',
+         component: BreadCumbView,
          key: 5
       },
       {
